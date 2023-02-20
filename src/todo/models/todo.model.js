@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 
 export default class Todo {
     /**
@@ -6,10 +7,9 @@ export default class Todo {
      */
     constructor(description){
         if (!description || description === '') throw Error('task es obligatorio');
-        this.id = 1
+        this.id = uuidv4();
         this.description = description;
         this.done = false;
         this.createdAt = new Date();
-
     }
 }
