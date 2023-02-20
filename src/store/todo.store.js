@@ -7,17 +7,13 @@ export const Filters = {
 }
 
 const state = {
-    todo: [
-        new Todo('Piedra blnanca'),
-        new Todo('Piedra roja'),
-        new Todo('Piedra amarilla'),
-    ],
+    todo: [],
     filter: Filters.All
 }
 
 const initStore = () => {
     loadStore();
-    console.log('InitStore ++');
+    console.log('InitStore!');
 }
 
 const loadStore = () => {
